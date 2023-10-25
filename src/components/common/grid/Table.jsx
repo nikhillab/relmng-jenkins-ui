@@ -25,6 +25,12 @@ export default function Table(props) {
             },
           }}
           pageSizeOptions={props.sizeOptions}
+          onCellClick={props.onCellClick}
+          onCellDoubleClick={props.onCellDoubleClick}
+          checkboxSelection={props.checkboxSelection}
+          onRowClick={(params) => {
+            props.onSelect(params.row)
+           }}
         />
       </Paper>
     </React.Fragment>

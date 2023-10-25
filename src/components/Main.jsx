@@ -9,6 +9,8 @@ import Dashboard from "./Dashboard";
 import Environment from "./environment/Environment";
 import Server from "./server/Server";
 import Job from "./job/Job";
+import JobDetails from "./job/JobDetails";
+
 import Filter from "./filter/Filter";
 
 export default function Main() {
@@ -28,6 +30,7 @@ export default function Main() {
           <Route path='/server' element={<Server />} />
           <Route path='/job' element={<Job />} />
           <Route path='/filter' element={<Filter />} />
+          <Route path='/job/details/:jobId' element={<JobDetails />} />
         </Routes>
       </Box>
       <Copyright sx={{ pt: 4 }} />
